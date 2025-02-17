@@ -1,0 +1,57 @@
+Topic:- 
+[I] CSS Selector
+
+1. Universal - * "Deliver to Everyone"
+               * Every element on the page gets affected.
+
+2. Element   - * "Deliver to all in a  specific Role"   
+               * Every (tags) in the document gets the style.
+
+3. Class     - * "Deliver to a specific group"
+               * Only elements with the class (name) will get the style.
+
+4. Id        - * Deliver to one specific element
+               * Only the element with the id(name)  gets the styled.
+
+5. Descendent(a b) - * "Deliver to element inside a specific tag"
+                     * Only tag(name) elements inside a tag(name) are affected.
+
+6. Child     - * "Deliver to direct child"
+               * Only tag(name) elements that are direct children of tag(name) 
+               are affected.
+
+7. Grouping -  * "Deliver to multiple groups".
+               * Both tag(h1) and tag(h2) elements are styled.
+
+
+[II] Specificity Precedence  
+
+1. Inline styles - {1, 0, 0, 0} (highest)
+
+2. Id [#MyId {}]- {0, 1, 0, 0}
+
+3. Class, Attribute [.className {}]- {0, 0, 1, 0}
+
+4. Element(tag) [name {}]- {0, 0, 0, 1} (lowest)
+
+5. Universal [* {}]- {0, 0, 0, 0} (No Specificity)
+
+
+[III] Combinators 
+
+1. Descendent Selector (A B) - Selects all nested elements inside another       element.
+
+2. Child Selector(A > B) - Selects Only direct children.
+
+3. Adjacent sibling Selector(A + B) - Selects the next immediate sibling.
+
+4. General sibling Selector(A ~ B) - Selects all later siblings.
+
+[IV] Pesudo Class 
+[V] Overflow
+[VI] Tags:- background-repeat, background-size. bg-position, bg-clip, box-shodow
+[VII] Variable Declaration, usage way
+
+[VIII] Positioning:- -> Default position (static)
+                     -> fixed, sticky, relative, absolute
+* viewport, -z-index
