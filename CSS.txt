@@ -1,5 +1,42 @@
-Topic:- 
-[I] CSS Selector
+Topic:-
+
+[I] font-text-styling :- 
+
+font-family, font-size, font-weight, font-style, text-align, text-decoration   [text-decoration-line, text-decoration-style, 
+text-decoration-color], text-transform, letter-spacing, word-spacing, line-highest, text-shodow(horizontal, vertical, blur, color), width, height
+
+
+[II] Structure:-
+* Block 
+* Inline (doesn't respect width, height)
+* Inline-Block
+
+
+[IV] Box Model Theory:-
+1. Content:
+The innermost part where text, images, and other media are displayed.
+
+2. Padding:
+The space between the content and the border.
+It creates an area around the content, and its background is typically transparent.
+
+3. Border:
+A line surrounding the padding and content.
+It can have varying styles (solid, dashed, etc.) and widths.
+
+4. Margin:
+The outermost space that separates the element from adjacent elements.
+Margins are transparent and help in positioning elements on the page.
+Box-Sizing Property:
+
+By default, the width and height of an element apply only to the content area. Padding and border widths are added outside this area, increasing the total size of the element.
+
+*Border-radius
+
+*"box-sizing: border-box;":- Property alters this behavior, including padding and border within the specified width and height, thus maintaining the element's total size.
+
+
+[V] CSS Selector
 
 1. Universal - * "Deliver to Everyone"
                * Every element on the page gets affected.
@@ -24,7 +61,7 @@ Topic:-
                * Both tag(h1) and tag(h2) elements are styled.
 
 
-[II] Specificity Precedence  
+[VI] Specificity Precedence  
 
 1. Inline styles - {1, 0, 0, 0} (highest)
 
@@ -37,7 +74,7 @@ Topic:-
 5. Universal [* {}]- {0, 0, 0, 0} (No Specificity)
 
 
-[III] Combinators 
+[VII] Combinators 
 
 1. Descendent Selector (A B) - Selects all nested elements inside another       element.
 
@@ -47,11 +84,37 @@ Topic:-
 
 4. General sibling Selector(A ~ B) - Selects all later siblings.
 
-[IV] Pesudo Class 
-[V] Overflow
-[VI] Tags:- background-repeat, background-size. bg-position, bg-clip, box-shodow
-[VII] Variable Declaration, usage way
+[VIII] Pesudo Class :- A pseudo-class in CSS is a keyword added to selectors that specifies a special state of the selected elements. They allow you to apply styles based on factors other than the element's name, attributes, or content, such as user interaction or element position within the DOM.
+Overflow
 
-[VIII] Positioning:- -> Default position (static)
+1. Document Tree Structure: Target elements based on their position within the HTML structure.
+
+    :first-child: Selects an element that is the first child of its parent.
+    :last-child: Selects an element that is the last child of its parent.
+    :nth-child(n): Selects elements based on their sibling position (e.g., :nth-child(2) selects the second child).
+2.User Interaction States: Style elements based on user actions.
+      :hover: Applies when the user hovers over an element.
+
+
+Tags:- text-overflow, background-repeat, background-size. bg-position, bg-clip, box-shodow, bg-image = url()
+
+[IX] (a)Variable Declaration:- ":root {--bg-color:white}", 
+     (b) usage way:- var(--bg-color)
+
+
+[X] Positioning:- -> Default position (static)
                      -> fixed, sticky, relative, absolute
 * viewport, -z-index
+
+[XI] Flex :- flex-direction, justify-content, align-items, flex-wrap, align-content, gap
+
+[XII] Grid:-  justify-content, align-items, justify-items,flex-wrap, align-content, gap
+
+[XIII] Animation:_
+ ```transform: translate, rotate, scale, skew```
+    transform-function (website: 'easing.net')
+```transtion: all 5s(duration) ease
+
+[XIV] Units:- ```em(element), rem(root-element), vh(viewport-height), vw(viewport-width)
+
+[XV] Media Query
